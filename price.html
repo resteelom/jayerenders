@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendering Services - Simple Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Banner Image */
+        #banner {
+            width: 100%;
+            height: 250px;
+            background-image: url('images/banner.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 15px 30px;
+            background-color: #ffbc00; /* Bright background to highlight */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .pricing-box {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 300px;
+            flex: 1;
+        }
+
+        .pricing-box h3 {
+            font-size: 32px;
+            color: #ffbc00;
+            margin-bottom: 20px;
+        }
+
+        .pricing-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .pricing-box ul li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Banner Image -->
+    <div id="banner"></div> <!-- Banner Image Section -->
+
+    <!-- Header -->
+    <header>
+        <h1>Rendering Services</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="price.html">Price List</a>
+        <a href="about.html">About the Architect</a>
+    </nav>
+
+    <!-- Main content -->
+    <div class="content">
+        <!-- Rendering Services Heading -->
+        <h2>Rendering Services</h2>
+
+        <!-- Pricing Section -->
+        <div class="pricing-container">
+            <!-- Simple Plan -->
+            <div class="pricing-box">
+                <h3>Simple</h3>
+                <ul>
+                    <li>Render with minor adjustments: 500 PHP per view</li>
+                    <li>Render with major adjustments: 500 PHP per view + 1000 PHP base price</li>
+                    <li>Modeling: 1500 PHP</li>
+                    <li>Walkthrough: 1000 PHP</li>
+                </ul>
+            </div>
+
+            <!-- Moderate Plan -->
+            <div class="pricing-box">
+                <h3>Moderate</h3>
+                <ul>
+                    <li>Render with minor adjustments: 750 PHP per view</li>
+                    <li>Render with major adjustments: 750 PHP per view + 1500 PHP base price</li>
+                    <li>Modeling: 2500 PHP</li>
+                    <li>Walkthrough: 2000 PHP</li>
+                </ul>
+            </div>
+
+            <!-- Complex Plan -->
+            <div class="pricing-box">
+                <h3>Complex</h3>
+                <ul>
+                    <li>Render with minor adjustments: 1000 PHP per view</li>
+                    <li>Render with major adjustments: 1000 PHP per view + 2000 PHP base price</li>
+                    <li>Modeling: 5000 PHP</li>
+                    <li>Walkthrough: 3000 PHP</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&#169; 2024 Jaye's Rendering Service. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
